@@ -1,11 +1,11 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>THE GAPPS INSTALLER</title>
-<meta name="theme-color" content="#2B3136" />
+<title>The Gapps Installer</title>
+<meta name="theme-color" content="#181819" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-<link rel="icon" type="image/png" href="favicon.png" />
+<link rel="icon" type="image/png" href="styles/images/logo.png" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800" />
 <link rel="stylesheet" type="text/css" href="styles/style.css" />
 <link rel="stylesheet" type="text/css" href="styles/framework.css" />
@@ -19,151 +19,187 @@
 <div id="page-preloader"><div id="loader"></div></div>
 <div id="page-deco-top"></div>
 <div id="page-transitions">
+
+    <div class="actionbar">
+    	    <div><a href="index.html"><img src="styles/images/treble.png" class="logo" title="The Gapps Installer"></img></a></div>
+            <div><a href="index.html">The Gapps Installer</a></div>
+            
+    		<div class="right-text">
+    			<a href="https://github.com/ChonDoit/TheGappsInstaller/releases" class="button bt-ind">DOWNLOADS</a>
+            </div>
+    	</div>
 	
 	<div class="content">
-	
-		<img src="styles/images/logo.png" class="logo" title="The Gapps Installer"></img>
 
+		<div class="bg-list" id="debug">
+        	<div class="block-title"><h2>About</h2></div>
+            <div style="padding-left: 15px; padding-right: 15px;">¡Oh shit, another GApps package!<br><br>
+                The Gapps Installer is focused on recover that what google apps took from phones. With magic tricks and more magic tricks I'm slowly reaching that goal.
+            </div><br>
+        </div>
+        
+        <div class="deco deco-thick"></div>
+    		
+        <div class="layout">
+    		<div class="bg-list" id="debug">
+        		<div class="block-title"><h2>Features</h2></div>
+                <div style="padding-left: 15px; padding-right: 15px;">
+                    • Only ARM64 builds<br>
+                    • OK Google support (STANDARD ONLY)<br>
+                    • BASIC and STANDARD Addons (up to A12)<br>
+                    • Easy to use Config Files (up to A12)<br>
+                    • Battery Optimizations + GMS Doze<br>
+                    • Debloated unnecessary things (WIP)<br>
+                    • Google Maps & Dialer support<br>
+                    • Lastest aptX blobs<br>
+                    • Motto onii-chan!<br>
+                </div><br>
+            </div>
+            
+                        <div class="bg-list" id="packages">
+                <div class="block-title"><h2>Packages</h2></div>
+                <div style="padding-left: 15px; padding-right: 15px;">
+                	<div class="tabset">
+        				<input type="radio" name="tabsat" id="tab3" aria-controls="core" checked>
+        				<label for="tab3">MINI-ME</label>
+        				<input type="radio" name="tabsat" id="tab4" aria-controls="mini">
+        				<label for="tab4">CORE</label>
+        				<input type="radio" name="tabsat" id="tab5" aria-controls="addons">
+        				<label for="tab5">ADDONS</label>
+        				<input type="radio" name="tabsat" id="tab6" aria-controls="go">
+        				<label for="tab6">MICRO-G</label>
+    				
+        				<div class="tab-panels">
+        					
+        					<section id="mini" class="tab-panel">
+        						•  Config Updater<br>
+        						•  Data Transfer Tool<br>
+        						•  Google Extension Shared<br>
+        						•  Google Extension Services<br>
+        						•  Google Calendar Sync<br>
+        						•  Google Contacts Sync<br>
+        						•  Google Partner Setup<br>
+        						•  Google Play Services<br>
+        						•  Google Services Framework<br>
+        						•  Play Store<br>
+        						•  Setup Wizard<br>
+        					</section>
+        					
+        					<section id="core" class="tab-panel">
+        					    Through config file only.<br><br>
+        						•  Config Updater<br>
+        						•  Google Extension Shared<br>
+        						•  Google Extension Services<br>
+        						•  Google Partner Setup<br>
+        						•  Google Play Services<br>
+        						•  Google Services Framework<br>
+        						•  Play Store<br>
+        					</section>
+        					
+        					<section id="addons" class="tab-panel">
+        					    Standalone packages who can be flashed over any GApps Package.<br><br>
+        						<b>BASICS ADDON</b><br>
+        						• Google Calculator<br>
+        						• Google Calendar<br>
+        						• Google Contacts<br>
+        						• Google Dialer<br>
+        						• Google Messages<br>
+        						• Lineage Clock<br>
+        						<br>
+        						<b>STANDARD ADDON</b><br>
+        						•  Android Auto Stub<br>
+        						•  Device Health Services + Turbo Adapter<br>
+        						•  Digital Wellbeing<br>
+        						•  Google App + OK Google Enrollment<br>
+        					</section>
+        					
+        					<section id="microg" class="tab-panel">
+        						• MicroG<br>
+        						• GSFProxy<br>
+        						• DroidGuard<br>
+        						• Aurora Store & Services<br>
+        						• Play Store<br>
+        						• Google Calendar & Contacts Syncs<br>
+        						• NLP: Apple, Deja Vu, Mozilla, Nominatim, Radio Cell
+        					</section>
+        				</div>
+        			</div>
+        		</div>
+			</div>
+            
+            <div class="bg-list" id="debug">
+            	<div class="block-title"><h2>Config files</h2></div>
+                <div style="padding-left: 15px; padding-right: 15px;">
+                    Create an empty file with following name and place it on the same folder where the GAPPS ZIP FILE is located<br>
+                    
+                    <div class="button button-quote">BASE PACKAGE</div>
+                    <span class="item">tgi-core</span>Play Services/Store things only. No sync, setup, etc.<br>
+                    <span class="item">tgi-nosetup</span>Avoid install SETUP WIZARD<br>
+                    <span class="item">tgi-noopt</span>Avoid apply GMS DOZE<br>
+                    
+                    <div class="button button-quote">STANDARD ADDON</div>
+                    <span class="item">tgi-noassistant</span>Avoid Install Google Assistant<br>
+                    
+                    <div class="button button-quote">MICRO-G</div>
+                    <span class="item">tgi-aurora</span> Keep Aurora Store instead Play Store<br>
+                </div><br>
+            </div>
+            
+            <div class="bg-list" id="debug">
+            	<div class="block-title"><h2>Terminal Build</h2></div>
+                <div style="padding-left: 15px; padding-right: 15px;">
+                	<b style="color: #00A86D">REQUIRES ROOT ACCESS.</b><br><br>
+                    Be able to push GApps directly into a GSI image (.img) without custom recovery.<br>
+                    
+                    <br>
+                    <span class="item">How to:</span><br>
+                    Unpack and run shell script alongside with GSI image path as argument<br>
+                    <b>sh <span style="color: #00A86D">/path/to/install.sh</span> <span style="color: #0082BF">/path/to/gsi.img</span></b><br>
+                    <br>
+                    Eg: Terminal build folder and GSI image reside on root of your internal memory (/sdcard)<br>
+                    <b>su -c sh <span style="color: #00A86D">/sdcard/*Gapps_Terminal_20240410/install.sh</span> <span style="color: #0082BF">/sdcard/system-td-arm64-ab-vanilla.img</span></b>
+                </div><br>
+            </div>
+            
+            <div class="bg-list" id="android13">
+        		<div class="block-title"><h2>GSI List</h2></div>
+        		<details>
+    	            <summary>TrebleDroid AOSP<span class="icon">+</span></summary>
+    	            <p><a target="_blank"  href="https://github.com/TrebleDroid/treble_experimentations/releases">Android 14<button class="button btfm open"></button></a></p>
+    	            <p><a target="_blank"  href="https://github.com/TrebleDroid/treble_experimentations/releases/tag/ci-20230905">Android 13<button class="button btfm open"></button></a></p>
+    	        </details>
+                <details>
+    	            <summary>Phh-AOSP<span class="icon">+</span></summary>
+    	            <p><a target="_blank"  href="https://github.com/phhusson/treble_experimentations/releases/tag/v416">Android 12<button class="button btfm open"></button></a></p>
+    	            <p><a target="_blank"  href="https://github.com/phhusson/treble_experimentations/releases/tag/v313">Android 11<button class="button btfm open"></button></a></p>
+    	        </details>
+                <details>
+    	            <summary>LineageOS<span class="icon">+</span></summary>
+    	            <p><a target="_blank"  href="https://sourceforge.net/projects/andyyan-gsi/files/lineage-21-td/">Android 14<button class="button btfm open"></button></a></p>
+					<p><a target="_blank"  href="https://sourceforge.net/projects/andyyan-gsi/files/lineage-20-td/">Android 13<button class="button btfm open"></button></a></p>
+					<p><a target="_blank"  href="https://sourceforge.net/projects/andyyan-gsi/files/lineage-19.x/">Android 12<button class="button btfm open"></button></a></p>
+					<p><a target="_blank"  href="https://sourceforge.net/projects/andyyan-gsi/files/lineage-18.x/">Android 11<button class="button btfm open"></button></a></p>
+    	        </details>
+                <details>
+    	            <summary>SuperiorOS<span class="icon">+</span></summary>
+    	            <p><a target="_blank"  href="https://github.com/ChonDoit/treble_superior_patches/releases">Android 14<button class="button btfm open"></button></a></p>
+					<p><a target="_blank"  href="https://github.com/ChonDoit/treble_superior_patches/releases/tag/A13">Android 13<button class="button btfm open"></button></a></p>
+					<p><a target="_blank"  href="https://github.com/ChonDoit/treble_superior_patches/releases/tag/A12L">Android 12<button class="button btfm open"></button></a></p>
+					<p><a target="_blank"  href="https://github.com/ChonDoit/treble_superior_patches/releases/tag/A11">Android 11<button class="button btfm open"></button></a></p>
+               </details>
+               <br>
+               <button onClick="window.open('https://github.com/phhusson/treble_experimentations/wiki/Generic-System-Image-%28GSI%29-list', '_blank')" class="button bt-50 button-github"><img src='styles/images/github.png' alt='About Phone'>GSI LIST</img></button>
+               <button onClick="window.open('gsi.html', '_blank')" class="button bt-50 button-github"><img src='styles/images/open.png' alt='About Phone'>OWN BUILDS</img></button>
+    	    </div>
+        </div>
+
+		<div class="bg-content center-text">
+			For bug reports, doubts or updates<br><br>
+			<button onClick="window.open('https://t.me/thegappsinstaller', '_blank')" class="button bt-50 button-telegram"><img src='styles/images/telegram.png' alt='About Phone'>SUPPORT GROUP</img></button>
+		</div>
+        
 		<div class="center-text">
-			<a href="#about" class="bt-40 button button-blue">ABOUT IT</a>
-			<a href="#features" class="bt-40 button button-jade">FEATURES</a>
-			<a href="#packages" class="bt-40 button button-yellow">PACKAGES</a>
-			<a href="#downloads" class="bt-40 button button-red">DOWNLOADS</a>
-			<a href="#support" class="bt-40 button button-arsenic">SUPPORT</a>
-		</div>
-
-		<div class="deco deco-thick"></div>
-		
-		<div class="bg-content" id="about">
-			<button class="bt-100 button button-blue center-text">ABOUT IT</button>
-			¡Oh shit, another GApps package!
-			<br><br>
-			The Gapps Installer is focused on recover that what google apps took from phones, Battery and Performance!<br><br>
-			With magic tricks and more magic tricks I'm slowly reaching that goal.
-			<br><br>
-			See below for features list :3
-		</div>
-
-		<div class="bg-content" id="features">
-			<button class="bt-100 button button-jade center-text">FEATURE LIST</button>
-				•  Only ARM64 builds<br>
-				•  MINI-ME Package (Less than Pico)<br>
-				•  BASIC and STANDARD Addons (check below for details)<br>
-				•  Easy to use Config Files<br>
-				•  OK Google support (STANDARD ONLY)<br>
-				•  Predefined System Components<br>
-				•  Battery Optimizations + GMS Doze<br>
-				•  Notifications working fine with GMS DOZE<br>
-				•  Debloated permissions (WIP)<br>
-				•  Debloated unnecessary things<br>
-				•  Google Maps & Dialer support<br>
-				•  Unlimited High/Original Quality Backup on Google Photos<br>
-				•  Lastest aptX blobs<br>
-				•  Force Basic Attestation for Safety Net (@kdrag0n)
-			</div>
-				
-			<div class="bg-content" id="features">
-				<button class="bt-100 button button-magenta center-text">CONFIG FILES</button>
-				Place the desired ones in the same folder where the GAPPS ZIP FILE is located<br>
-				<br>
-				• BASE PACKAGE<br>
-				tgi-core: Play Services/Store things only. No sync, setup, etc.<br>
-				tgi-nosetup: Avoid install SETUP WIZARD<br>
-				tgi-noopt: Avoid apply GMS DOZE<br>
-					<br>
-				• STANDARD ADDON<br>
-				tgi-noassistant: Avoid Install Google Assistant<br>
-					<br>
-				• MICRO-G<br>
-				tgi-aurora: Keep Aurora Store instead Play Store<br>
-			</div>
-		
-		<div class="bg-content" id="packages">
-			<button class="bt-100 button button-yellow center-text">APPS PER PACKAGE</button>
-			
-			<div class="tabset">
-				<input type="radio" name="tabsat" id="tab3" aria-controls="core" checked>
-				<label for="tab3">MINI-ME</label>
-				<input type="radio" name="tabsat" id="tab4" aria-controls="mini">
-				<label for="tab4">CORE</label>
-				<input type="radio" name="tabsat" id="tab5" aria-controls="addons">
-				<label for="tab5">ADDONS</label>
-				<input type="radio" name="tabsat" id="tab6" aria-controls="go">
-				<label for="tab6">MICRO-G</label>
-				
-				<div class="tab-panels">
-					
-					<section id="mini" class="tab-panel">
-						•  Config Updater<br>
-						•  Data Transfer Tool<br>
-						•  Google Extension Shared<br>
-						•  Google Extension Services<br>
-						•  Google Calendar Sync<br>
-						•  Google Contacts Sync<br>
-						•  Google Partner Setup<br>
-						•  Google Play Services<br>
-						•  Google Services Framework<br>
-						•  Play Store<br>
-						•  Setup Wizard<br>
-					</section>
-					
-					<section id="core" class="tab-panel">
-					    Through config file only.<br><br>
-						•  Config Updater<br>
-						•  Google Extension Shared<br>
-						•  Google Extension Services<br>
-						•  Google Partner Setup<br>
-						•  Google Play Services<br>
-						•  Google Services Framework<br>
-						•  Play Store<br>
-					</section>
-					
-					<section id="addons" class="tab-panel">
-					    Standalone packages who can be flashed over any GApps Package.<br><br>
-						<b>BASICS ADDON</b><br>
-						• Google Calculator<br>
-						• Google Calendar<br>
-						• Google Contacts<br>
-						• Google Dialer<br>
-						• Google Messages<br>
-						• Lineage Clock<br>
-						<br>
-						<b>STANDARD ADDON</b><br>
-						•  Android Auto Stub<br>
-						•  Device Health Services + Turbo Adapter<br>
-						•  Digital Wellbeing<br>
-						•  Google App + OK Google Enrollment<br>
-					</section>
-					
-					<section id="microg" class="tab-panel">
-						• MicroG<br>
-						• GSFProxy<br>
-						• DroidGuard<br>
-						• Aurora Store & Services<br>
-						• Play Store<br>
-						• Google Calendar & Contacts Syncs<br>
-						• NLP: Apple, Deja Vu, Mozilla, Nominatim, Radio Cell
-					</section>
-				</div>
-			</div>
-		</div>
-		
-		<div class="bg-content" id="downloads">
-			<button class="bt-100 button button-red">DOWNLOADS</button>
-		
-			<div class="center-text">
-			<a href="https://github.com/ChonDoit/TheGappsInstaller/tags" target="_blank" class="bt-50 button button-magenta">GITHUB RELEASES</a>
-			</div>
-		</div>
-		
-		<div class="bg-content center-text" id="support">
-			For bug reports or doubts join to the telegram group<br><br>
-			<a href="https://t.me/thegappsinstaller" target="_blank" class="bt-50 button button-telegram">TELEGRAM GROUP</a>
-		</div>
-
-		<div class="center-text">
-			The Gapps Installer © 2017-2022<br>
-			El Rancho de Cornelio
+			The Gapps Installer © Be Cornelio
 		</div>
 		
 	</div>

@@ -1,3 +1,3 @@
 # The Gapps Installer Repository
 
-https://chondoit.github.io/TheGappsInstaller/
+https://the-gapps-installer.vercel.app/
