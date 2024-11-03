@@ -96,7 +96,7 @@ h4{ font-size:18px; line-height:23px; font-weight:500; margin-bottom:5px;}
 h5{ font-size:15px; line-height:22px; font-weight:500; margin-bottom:5px;}
 h6{ font-size:14px; line-height:30px; font-weight:500; display:inline-block;}
 
-.block-title h2, h3.comment-reply-title { width: 100%; font-family:'sfpro'; display: inline-block; position: relative; font-size: 21px; margin: 0 0 20px; z-index: 1; padding-bottom: 7px; }
+.block-title h2, h3.comment-reply-title { width: 100%; font-family:'samsung'; display: inline-block; position: relative; font-size: 21px; margin: 0 0 20px; z-index: 1; padding-bottom: 7px; }
 .block-title h2:after, h3.comment-reply-title:after { display: block; position: absolute; content: ''; width: 30%; background-color: #0082BF; height: 2px; bottom: 0; }
 .block-title h2:before, h3.comment-reply-title:before { display: block; position: absolute; content: ''; width: 100%; background-color: #3B444B; height: 2px; bottom: 0; }
 .block-title h3 span { color: #FF9638; }
